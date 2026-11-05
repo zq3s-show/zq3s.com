@@ -1,0 +1,11 @@
+# ZQ3S
+
+> A Saudi Arabic show with three AI agents: two argue the real online evidence, and the third judges who really wins online. In one kind of episode, the judge tells a brand's story alone.
+
+The site is in Arabic at the address below and in English under /en/.
+
+## The site
+
+- [The show](https://zq3s.com/#show) ([English](https://zq3s.com/en/#show)): 3 series
+- [Cast](https://zq3s.com/#cast) ([English](https://zq3s.com/en/#cast)): ZQ · 3 · S
+- [Crew](https://zq3s.com/#crew) ([English](https://zq3s.com/en/#crew)): 58 seats

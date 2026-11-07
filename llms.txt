@@ -28,7 +28,7 @@ All of them: [https://zq3s.com/episodes/](https://zq3s.com/episodes/) ([English]
 
 All of them: [https://zq3s.com/articles/](https://zq3s.com/articles/) ([English](https://zq3s.com/en/articles/))
 
-- [الهلال أم النصر: من الأكبر جمهورًا على الإنترنت؟](https://zq3s.com/articles/hilal-nassr-crowd-online/) ([English](https://zq3s.com/en/articles/hilal-nassr-crowd-online/), [the numbers as CSV](https://zq3s.com/articles/hilal-nassr-crowd-online/a1-table.csv)): The answer changes with the measure. We compared Al Hilal and Al Nassr on followers across four platforms, Google search and Wikipedia reading, each number with its source, date and limits.
+- [الهلال أو النصر مين أكثر جمهور على الإنترنت؟](https://zq3s.com/articles/hilal-nassr-crowd-online/) ([English](https://zq3s.com/en/articles/hilal-nassr-crowd-online/), [the numbers as CSV](https://zq3s.com/articles/hilal-nassr-crowd-online/a1-table.csv)): The answer changes with the measure. We compared Al Hilal and Al Nassr on followers across four platforms, Google search and Wikipedia reading, each number with its source, date and limits.
 
 ## The site
 

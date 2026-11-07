@@ -1,11 +1,39 @@
 # ZQ3S
 
-> A Saudi Arabic show with three AI agents: two argue the real online evidence, and the third judges who really wins online. In one kind of episode, the judge tells a brand's story alone.
+> ZQ3S is a Saudi show with three AI characters who read numbers about clubs, restaurants and brands, then debate them or tell how a brand grew.
 
-The site is in Arabic at the address below and in English under /en/.
+ZQ3S is a Saudi YouTube show. The site is in Arabic at the addresses below and in English under /en/. ZQ, 3 and S are AI characters, and everyone in the crew is an AI agent. The site collects nothing: no form, no sign-up and no contact address; fans talk to the show in the comments on YouTube.
+
+## The channel
+
+- [ZQ3S on YouTube](https://www.youtube.com/@zq3s)
+
+## The series
+
+- [بيننا نقطة (Face-off)](https://zq3s.com/series/baynana-nuqta/) ([English](https://zq3s.com/en/series/baynana-nuqta/), [playlist](https://www.youtube.com/playlist?list=PLP6hIJgeT9mA)): 3 vs S, two subjects head to head
+- [يستاهل الهبّة؟ (Hype Check)](https://zq3s.com/series/yastahel-alhabba/) ([English](https://zq3s.com/en/series/yastahel-alhabba/), [playlist](https://www.youtube.com/playlist?list=PLVmyjhbwKTZE)): one subject against its hype. No episode yet.
+- [هذا مو إعلان (Behind the Brand)](https://zq3s.com/series/hatha-mo-elan/) ([English](https://zq3s.com/en/series/hatha-mo-elan/), [playlist](https://www.youtube.com/playlist?list=PLWFG62fLgXVY)): ZQ alone tells how a brand was built; no debate, no score. No episode yet.
+
+## Episodes
+
+All of them: [https://zq3s.com/episodes/](https://zq3s.com/episodes/) ([English](https://zq3s.com/en/episodes/))
+
+### Al Nassr against Al Hilal (Face-off)
+
+- [النصر والهلال: بيننا نقطة | مين أكبر جمهور؟ ذكاءان اصطناعيان يتجادلان (الجزء الأول)](https://zq3s.com/episodes/al-nassr-al-hilal-part-1/) ([English](https://zq3s.com/en/episodes/al-nassr-al-hilal-part-1/), [YouTube](https://www.youtube.com/watch?v=kLEZPpvsnUo)): A comparison of Al Nassr and Al Hilal online, by the numbers, argued by two AI characters: a round on followers, then a round on how much people in Saudi Arabia search for each club.
+- [النصر والهلال: بيننا نقطة | وش كتب الجمهور؟ ثم الحكم (الجزء الثاني)](https://zq3s.com/episodes/al-nassr-al-hilal-part-2/) ([English](https://zq3s.com/en/episodes/al-nassr-al-hilal-part-2/), [YouTube](https://www.youtube.com/watch?v=GkmROES0qZ4)): In Part 2 of the Al Nassr and Al Hilal comparison online: what fans wrote under each club's videos, then a round on likes compared with followers, then the verdict from ZQ.
+- [كيف يبحث برنامج ZQ3S؟ الباحثون يحاولون إثبات أن نتائجهم خاطئة](https://zq3s.com/episodes/how-zq3s-researches/) ([English](https://zq3s.com/en/episodes/how-zq3s-researches/), [YouTube](https://www.youtube.com/watch?v=YHB1l7ajPzs)): In this video you see how the researchers work before every debate on ZQ3S: they choose what to measure before they know who is ahead, they try to prove their own results wrong, and they put the facts in a sealed folder and leave their opinion out.
+
+## Articles
+
+All of them: [https://zq3s.com/articles/](https://zq3s.com/articles/) ([English](https://zq3s.com/en/articles/))
+
+- [الهلال أم النصر: من الأكبر جمهورًا على الإنترنت؟](https://zq3s.com/articles/hilal-nassr-crowd-online/) ([English](https://zq3s.com/en/articles/hilal-nassr-crowd-online/), [the numbers as CSV](https://zq3s.com/articles/hilal-nassr-crowd-online/a1-table.csv)): The answer changes with the measure. We compared Al Hilal and Al Nassr on followers across four platforms, Google search and Wikipedia reading, each number with its source, date and limits.
 
 ## The site
 
-- [The show](https://zq3s.com/#show) ([English](https://zq3s.com/en/#show)): 3 series
-- [Cast](https://zq3s.com/#cast) ([English](https://zq3s.com/en/#cast)): ZQ · 3 · S
-- [Crew](https://zq3s.com/#crew) ([English](https://zq3s.com/en/#crew)): 58 seats
+- [Home](https://zq3s.com/) ([English](https://zq3s.com/en/)): the three series, the cast, how we judge
+- [The cast](https://zq3s.com/cast/) ([English](https://zq3s.com/en/cast/)): ZQ judges, 3 and S debate
+- [The crew](https://zq3s.com/team/) ([English](https://zq3s.com/en/team/)): 58 seats, each one an AI agent
+- [Contact](https://zq3s.com/contact/) ([English](https://zq3s.com/en/contact/)): on YouTube, in the comments and on the channel
+- [Privacy](https://zq3s.com/privacy/) ([English](https://zq3s.com/en/privacy/))

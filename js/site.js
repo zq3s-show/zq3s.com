@@ -14,13 +14,37 @@ function now(){return W.performance.now()}
 if(!W.ZQ3S_T)W.ZQ3S_T=function(s){var d=W.ZQ3S_AR||{};return s&&Object.prototype.hasOwnProperty.call(d,s)&&d[s]?d[s]:s};
 function T(s){return W.ZQ3S_T(s)}
 
-/* ---------------- events, and the analytics slot (off until the owner chooses a provider) */
+/* ---------------- events, and the analytics slot (off until the owner switches it on in analytics.json)
+   Every event is kept in window.ZQ3S_EVENTS whether the slot is on or off. When it is on, the build has put the
+   provider's own snippet in the head and set window.ZQ3S_ANALYTICS.send, which turns an event into the provider's call.
+   What is sent is only the event's name and a few short parameters (where, id, href): nothing about the visitor. */
 var EV=W.ZQ3S_EVENTS=W.ZQ3S_EVENTS||[];
-function track(name,props){var e={name:name,props:props||{},t:Math.round(now())};EV.push(e);
-  var A=W.ZQ3S_ANALYTICS;if(A&&A.on&&typeof A.send==='function'){try{A.send(name,e.props)}catch(_){}}}
+/* the parameters as the provider takes them: text or numbers, cut to 100 characters, empty ones left out, names cut to 40 */
+function clean(p){var o={},k,v;for(k in p){if(!Object.prototype.hasOwnProperty.call(p,k))continue;v=p[k];
+  if(v===''||v==null)continue;
+  if(typeof v==='boolean')v=v?'true':'false';else if(typeof v!=='number')v=String(v).slice(0,100);
+  o[k.slice(0,40)]=v}return o}
+/* local: kept in the page's own list only, never sent (the arrival's tags, which the provider reads from the address) */
+function track(name,props,local){var e={name:name,props:props||{},t:Math.round(now())};if(local)e.local=true;EV.push(e);
+  if(local)return;
+  var A=W.ZQ3S_ANALYTICS;if(A&&A.on&&typeof A.send==='function'){
+    try{A.send(String(name).replace(/[^A-Za-z0-9_]/g,'_').slice(0,40),clean(e.props))}catch(_){}}}
 W.ZQ3S_TRACK=track;
-D.addEventListener('click',function(e){var a=e.target.closest('[data-track]');if(!a)return;
-  track(a.getAttribute('data-track'),{where:a.getAttribute('data-where')||'',href:a.getAttribute('href')||'',id:a.getAttribute('data-id')||''})},true);
+/* a click on a link that carries data-track, or on any link inside a box that carries data-track-in (the chapter list,
+   the words), and a middle click too: someone who opens Subscribe in a new tab has chosen it as much as anyone */
+function onClick(e){var t=e.target;if(!t||!t.closest)return;
+  var a=t.closest('[data-track]');
+  if(a){track(a.getAttribute('data-track'),{where:a.getAttribute('data-where')||'',href:a.getAttribute('href')||'',id:a.getAttribute('data-id')||''});return}
+  var c=t.closest('[data-track-in]'),l=t.closest('a[href]');
+  if(c&&l&&c.contains(l))track(c.getAttribute('data-track-in'),{where:c.getAttribute('data-where')||'',href:l.getAttribute('href')||'',id:c.getAttribute('data-id')||''})}
+D.addEventListener('click',onClick,true);
+D.addEventListener('auxclick',function(e){if(e.button===1)onClick(e)},true);
+/* the arrival's tracking tags (utm_source, utm_medium, utm_campaign, utm_content), kept in the page's own list so they can be
+   checked with the slot off. The provider reads the same tags from the address itself, so this entry is never sent. */
+(function(){var q,u={},n=0;try{q=new URLSearchParams(W.location.search)}catch(_){return}
+  ['utm_source','utm_medium','utm_campaign','utm_content'].forEach(function(k){var v=q.get(k);
+    if(v){u[k]=v.replace(/[\u0000-\u001f\u007f]/g,'').slice(0,100);n++}});
+  if(n)track('arrival',u,true)})();
 
 /* ---------------- drawn-in sections (the crew map, the seams, the cast's tallies) */
 var DRAWN='.map,.seams,.slot,.together,.ruling,.tally,.chap';
@@ -118,6 +142,18 @@ $$('.player[data-yt]').forEach(function(p){var b=$('.player-btn',p);if(!b)return
 D.addEventListener('click',function(e){var a=e.target.closest('[data-play-for]');if(!a)return;var p=D.getElementById(a.getAttribute('data-play-for'));
   var b=p&&$('.player-btn',p);if(!b)return;e.preventDefault();
   var r=p.getBoundingClientRect();if(r.top<60||r.bottom>innerHeight)p.scrollIntoView({block:'center',behavior:RM?'auto':'smooth'});b.click()});
+/* a chapter's time plays the film on the page from there (Luay, 2026-11-11); with a modifier key it opens YouTube */
+D.addEventListener('click',function(e){var a=e.target.closest('a[data-seek]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey||e.altKey||e.button>0)return;
+  var p=D.getElementById(a.getAttribute('data-seek-for'));if(!p||p.getAttribute('data-public')!=='1')return;
+  e.preventDefault();var t=parseInt(a.getAttribute('data-seek'),10)||0,f=$('iframe',p);
+  var src='https://www.youtube-nocookie.com/embed/'+encodeURIComponent(p.getAttribute('data-yt'))+'?autoplay=1&rel=0&playsinline=1&start='+t+'&hl='+(AR?'ar':'en');
+  if(!f){var b=$('.player-btn',p);if(b)b.click();f=$('iframe',p)}
+  if(f)f.src=src;
+  var r=p.getBoundingClientRect();if(r.top<60||r.bottom>innerHeight)p.scrollIntoView({block:'center',behavior:RM?'auto':'smooth'})});
+/* the phone menu closes on a click outside it and on Escape */
+$$('details.sb-m').forEach(function(d){
+  D.addEventListener('click',function(e){if(d.open&&!d.contains(e.target))d.open=false});
+  D.addEventListener('keydown',function(e){if(e.key==='Escape'&&d.open){d.open=false;var s=$('summary',d);if(s)s.focus()}})});
 
 /* ---------------- the cast library loads when a stage is near (or at once on the cast page), never before the
    first screen has drawn */
@@ -448,7 +484,8 @@ if(W.__crew.cast)layoutChanged();
    2. (Removed: no address to copy, R-2026-11-07-09.)
    3. The series title screen: the ceremony plays once over its still, when it is on screen and motion is allowed.
    4. The article's paired bars draw in as they reach the screen (the report's charts on the web); still under
-      reduced motion, and drawn whole without this script. */
+      reduced motion, and drawn whole without this script.
+   5. The reports page's filters (Luay, 2026-11-10). */
 (function(){
 'use strict';
 var D=document,W=window;
@@ -474,5 +511,72 @@ $$('.ps-pairs').forEach(function(f){
   if(RM||!('IntersectionObserver' in W))return;
   f.classList.add('will-draw');
   var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){f.classList.add('is-in');io.disconnect()}},{threshold:.2});io.observe(f);
+});
+/* 5. the reports page's filters (Luay, R-2026-11-09-07): show segment, category, month and who it is about. Without
+      this script every report shows and the filters stay hidden. The choice lives in the address (?series=...), so a
+      filtered list can be shared and the back button keeps it. */
+$$('[data-rp-filters]').forEach(function(box){
+  var list=$('[data-rp-list]'),none=$('[data-rp-none]'),count=$('[data-rp-count]',box),reset=$('[data-rp-reset]',box);
+  if(!list)return;
+  var sels=$$('select[data-key]',box),items=$$('.rp-item',list);
+  var ar=D.documentElement.lang==='ar',tpl=count?count.getAttribute('data-tpl'):'';
+  function dg(n){n=String(n);return ar?n.replace(/[0-9]/g,function(c){return '٠١٢٣٤٥٦٧٨٩'.charAt(+c)}):n}
+  function match(li,k,v){if(!v)return true;
+    if(k==='subject')return (li.getAttribute('data-subject')||'').indexOf(' '+v+' ')>=0;
+    return li.getAttribute('data-'+k)===v}
+  function apply(write){var n=0,any=false,q=[];
+    sels.forEach(function(s){if(s.value){any=true;q.push(encodeURIComponent(s.getAttribute('data-key'))+'='+encodeURIComponent(s.value))}});
+    items.forEach(function(li){var ok=sels.every(function(s){return match(li,s.getAttribute('data-key'),s.value)});li.hidden=!ok;if(ok)n++});
+    if(none)none.hidden=n>0;if(reset)reset.hidden=!any;
+    if(count)count.textContent=tpl.replace('{n}',dg(n)).replace('{t}',dg(items.length));
+    if(write&&W.history&&W.history.replaceState){try{W.history.replaceState(null,'',W.location.pathname+(q.length?'?'+q.join('&'):'')+W.location.hash)}catch(_){}}}
+  /* the address's choice, when it names a value the list has */
+  try{var u=new URLSearchParams(W.location.search);sels.forEach(function(s){var v=u.get(s.getAttribute('data-key'));
+    if(v&&$$('option',s).some(function(o){return o.value===v}))s.value=v})}catch(_){}
+  sels.forEach(function(s){s.addEventListener('change',function(){apply(true);
+    if(W.ZQ3S_TRACK)W.ZQ3S_TRACK('report_filter',{where:'reports',id:s.getAttribute('data-key')+':'+(s.value||'all')})})});
+  if(reset)reset.addEventListener('click',function(){sels.forEach(function(s){s.value=''});apply(true);
+    if(W.ZQ3S_TRACK)W.ZQ3S_TRACK('report_filter',{where:'reports',id:'reset'})});
+  box.hidden=false;apply(false);
+});
+/* 6. the episodes list (Luay, 2026-11-11): by series, by who it is about, and a search. One page of the list filters
+      itself; when the list has more pages, the choice reads every episode from list.json and shows them all as rows.
+      The choice lives in the address (?series=...&q=...). Without this script the pages and their links stay. */
+$$('[data-epx-filters]').forEach(function(box){
+  var list=$('[data-epx-list]'),res=$('[data-epx-results]'),none=$('[data-rp-none]'),count=$('[data-rp-count]',box),reset=$('[data-rp-reset]',box);
+  if(!list)return;
+  var ctl=$$('[data-key]',box),groups=$$('.epx',list),paged=!!$('.pager'),all=null,loading=false;
+  var ar=D.documentElement.lang==='ar',tpl=count?count.getAttribute('data-tpl'):'';
+  function dg(n){n=String(n);return ar?n.replace(/[0-9]/g,function(c){return '٠١٢٣٤٥٦٧٨٩'.charAt(+c)}):n}
+  function norm(t){return String(t||'').toLowerCase().replace(/[ً-ٰٟ]/g,'').replace(/[أإآ]/g,'ا').replace(/ة/g,'ه').replace(/ى/g,'ي').trim()}
+  function val(k){var c=ctl.filter(function(x){return x.getAttribute('data-key')===k})[0];return c?c.value:''}
+  function ok(series,subject,q){var s=val('series'),j=val('subject'),w=norm(val('q'));
+    if(s&&series!==s)return false;if(j&&(' '+subject.join(' ')+' ').indexOf(' '+j+' ')<0)return false;
+    if(w){var t=norm(q);return w.split(/\s+/).every(function(x){return t.indexOf(x)>=0})}return true}
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function row(e){return '<li><a class="ps-epr" href="'+esc(e.url)+'" data-track="episode_open" data-where="episodes-search"><img src="'+esc(e.img)+
+    '" width="480" height="270" alt="" loading="lazy" decoding="async"><span><b>'+esc(e.title)+'</b><span class="ps-parts">'+esc(e.series_name)+'</span></span></a></li>'}
+  function apply(write){
+    var any=ctl.some(function(c){return !!c.value}),n=0,t=0,q=[];
+    ctl.forEach(function(c){if(c.value)q.push(encodeURIComponent(c.getAttribute('data-key'))+'='+encodeURIComponent(c.value))});
+    if(paged&&any){
+      if(!all){if(!loading){loading=true;fetch(box.getAttribute('data-index')).then(function(r){return r.json()}).then(function(j){all=j.episodes||[];apply(false)}).catch(function(){loading=false})}return}
+      var hits=all.filter(function(e){return ok(e.series,e.subjects,e.q)});n=hits.length;t=all.length;
+      res.innerHTML=hits.map(row).join('');res.hidden=false;list.hidden=true;
+    }else{
+      res.hidden=true;list.hidden=false;
+      groups.forEach(function(g){var y=ok(g.getAttribute('data-series'),(g.getAttribute('data-subject')||'').trim().split(/\s+/),g.getAttribute('data-q'));g.hidden=!y;if(y)n++});t=groups.length;
+    }
+    var pg=$('.pager');if(pg)pg.hidden=any;
+    if(none)none.hidden=n>0;if(reset)reset.hidden=!any;
+    if(count)count.textContent=any?tpl.replace('{n}',dg(n)).replace('{t}',dg(t)):'';
+    if(write&&W.history&&W.history.replaceState){try{W.history.replaceState(null,'',W.location.pathname+(q.length?'?'+q.join('&'):'')+W.location.hash)}catch(_){}}}
+  try{var u=new URLSearchParams(W.location.search);ctl.forEach(function(c){var v=u.get(c.getAttribute('data-key'));
+    if(v&&(c.tagName!=='SELECT'||$$('option',c).some(function(o){return o.value===v})))c.value=v})}catch(_){}
+  var qt=0;
+  ctl.forEach(function(c){c.addEventListener(c.tagName==='SELECT'?'change':'input',function(){clearTimeout(qt);qt=setTimeout(function(){apply(true);
+    if(W.ZQ3S_TRACK)W.ZQ3S_TRACK('episode_filter',{where:'episodes',id:c.getAttribute('data-key')+(c.tagName==='SELECT'?':'+(c.value||'all'):'')})},c.tagName==='SELECT'?0:220)})});
+  if(reset)reset.addEventListener('click',function(){ctl.forEach(function(c){c.value=''});apply(true)});
+  box.hidden=false;apply(false);
 });
 })();

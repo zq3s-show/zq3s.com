@@ -1,127 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  <url><loc>https://zq3s.com/</loc><lastmod>2026-11-08</lastmod>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://zq3s.com/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/"/>
   </url>
-  <url><loc>https://zq3s.com/en/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/"/>
   </url>
-  <url><loc>https://zq3s.com/series/baynana-nuqta/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/series/baynana-nuqta/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/series/baynana-nuqta/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/series/baynana-nuqta/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/series/baynana-nuqta/"/>
   </url>
-  <url><loc>https://zq3s.com/en/series/baynana-nuqta/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/series/baynana-nuqta/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/series/baynana-nuqta/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/series/baynana-nuqta/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/series/baynana-nuqta/"/>
   </url>
-  <url><loc>https://zq3s.com/episodes/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/episodes/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/episodes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/episodes/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/episodes/"/>
   </url>
-  <url><loc>https://zq3s.com/en/episodes/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/episodes/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/episodes/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/episodes/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/episodes/"/>
   </url>
-  <url><loc>https://zq3s.com/episodes/al-nassr-al-hilal-part-1/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/episodes/al-nassr-al-hilal-part-1/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/episodes/al-nassr-al-hilal-part-1/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/episodes/al-nassr-al-hilal-part-1/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/episodes/al-nassr-al-hilal-part-1/"/>
     <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/al-nassr-al-hilal-part-1.jpg</video:thumbnail_loc><video:title>النصر والهلال: بيننا نقطة | مين أكبر جمهور؟ ذكاءان اصطناعيان يتجادلان (الجزء الأول)</video:title><video:description>مقارنة بين النصر والهلال على الإنترنت، بالأرقام. شخصيتان من الذكاء الاصطناعي تتجادلان، وفي هذا الجزء جولتان: المتابعون، وكم يبحث السعوديون عن كل نادٍ.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/kLEZPpvsnUo</video:player_loc><video:publication_date>2026-11-07</video:publication_date></video:video>
   </url>
-  <url><loc>https://zq3s.com/en/episodes/al-nassr-al-hilal-part-1/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/episodes/al-nassr-al-hilal-part-1/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/episodes/al-nassr-al-hilal-part-1/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/episodes/al-nassr-al-hilal-part-1/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/episodes/al-nassr-al-hilal-part-1/"/>
-    <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/al-nassr-al-hilal-part-1.jpg</video:thumbnail_loc><video:title>النصر والهلال: بيننا نقطة | مين أكبر جمهور؟ ذكاءان اصطناعيان يتجادلان (الجزء الأول)</video:title><video:description>مقارنة بين النصر والهلال على الإنترنت، بالأرقام. شخصيتان من الذكاء الاصطناعي تتجادلان، وفي هذا الجزء جولتان: المتابعون، وكم يبحث السعوديون عن كل نادٍ.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/kLEZPpvsnUo</video:player_loc><video:publication_date>2026-11-07</video:publication_date></video:video>
+    <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/al-nassr-al-hilal-part-1-en.jpg</video:thumbnail_loc><video:title>Cristiano Ronaldo &amp; Neymar: Al Nassr vs Al Hilal Followers Before and After the Stars (Part 1)</video:title><video:description>Cristiano Ronaldo&#x27;s arrival post is the most-liked post on the Al Nassr Instagram, with more than 32 million likes. On the Al Hilal Instagram, it&#x27;s the photo announcing Neymar, with more than 10 million. Who gets the credit for those likes, the club or the star? (Likes as counted on 2 November 2026.)</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/Ndv-E7nBdYQ</video:player_loc></video:video>
   </url>
-  <url><loc>https://zq3s.com/episodes/al-nassr-al-hilal-part-2/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/episodes/al-nassr-al-hilal-part-2/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/episodes/al-nassr-al-hilal-part-2/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/episodes/al-nassr-al-hilal-part-2/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/episodes/al-nassr-al-hilal-part-2/"/>
     <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/al-nassr-al-hilal-part-2.jpg</video:thumbnail_loc><video:title>النصر والهلال: بيننا نقطة | وش كتب الجمهور؟ ثم الحكم (الجزء الثاني)</video:title><video:description>في الجزء الثاني من مقارنة النصر والهلال على الإنترنت: ما كتبه الجمهور تحت فيديوهات كل نادٍ، ثم جولة الإعجابات مقارنةً بعدد المتابعين، ثم حكم ZQ.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/GkmROES0qZ4</video:player_loc><video:publication_date>2026-11-07</video:publication_date></video:video>
   </url>
-  <url><loc>https://zq3s.com/en/episodes/al-nassr-al-hilal-part-2/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/episodes/al-nassr-al-hilal-part-2/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/episodes/al-nassr-al-hilal-part-2/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/episodes/al-nassr-al-hilal-part-2/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/episodes/al-nassr-al-hilal-part-2/"/>
-    <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/al-nassr-al-hilal-part-2.jpg</video:thumbnail_loc><video:title>النصر والهلال: بيننا نقطة | وش كتب الجمهور؟ ثم الحكم (الجزء الثاني)</video:title><video:description>في الجزء الثاني من مقارنة النصر والهلال على الإنترنت: ما كتبه الجمهور تحت فيديوهات كل نادٍ، ثم جولة الإعجابات مقارنةً بعدد المتابعين، ثم حكم ZQ.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/GkmROES0qZ4</video:player_loc><video:publication_date>2026-11-07</video:publication_date></video:video>
+    <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/al-nassr-al-hilal-part-2-en.jpg</video:thumbnail_loc><video:title>Cristiano Ronaldo &amp; Neymar: Al Nassr vs Al Hilal, Instagram Likes vs Followers (Part 2)</video:title><video:description>Al Nassr signed Cristiano Ronaldo. Al Hilal signed Neymar, who has since left. In Part 2 the fans get their say: what people wrote in the YouTube comments, and how many Instagram likes each club gets for the size of its following.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/741axpjwQZw</video:player_loc></video:video>
   </url>
-  <url><loc>https://zq3s.com/episodes/how-zq3s-researches/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/episodes/how-zq3s-researches/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/episodes/how-zq3s-researches/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/episodes/how-zq3s-researches/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/episodes/how-zq3s-researches/"/>
-    <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/how-zq3s-researches.jpg</video:thumbnail_loc><video:title>كيف يبحث برنامج ZQ3S؟ الباحثون يحاولون إثبات أن نتائجهم خاطئة</video:title><video:description>في هذا الفيديو تشوفون كيف يبحث الباحثون قبل كل مناظرة في برنامج ZQ3S: يختارون ما يقيسونه قبل أن يعرفوا من يتقدم، ويحاولون إثبات أن نتائجهم خاطئة، ثم يضعون الحقائق في ملف مختوم ويتركون رأيهم خارجه.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/YHB1l7ajPzs</video:player_loc><video:publication_date>2026-11-07</video:publication_date></video:video>
+    <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/how-zq3s-researches-ar.jpg</video:thumbnail_loc><video:title>كيف يشتغل مختبر ZQ3S؟ من أول بحث لآخر تدقيق</video:title><video:description>ZQ3S مختبر أبحاث يشتغل بالذكاء الاصطناعي. ندرس قوة أي علامة تجارية على الإنترنت ونقارنها بأقرب منافسيها. في هذا الفيديو ZQ يوريكم كيف تنبني الدراسة اللي وراء برامجنا. الباحثون والمدققون والمديرون كلهم وكلاء ذكاء اصطناعي، صممهم إنسان واحد.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/63YCFUMfMs0</video:player_loc></video:video>
   </url>
-  <url><loc>https://zq3s.com/en/episodes/how-zq3s-researches/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/episodes/how-zq3s-researches/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/episodes/how-zq3s-researches/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/episodes/how-zq3s-researches/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/episodes/how-zq3s-researches/"/>
-    <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/how-zq3s-researches.jpg</video:thumbnail_loc><video:title>كيف يبحث برنامج ZQ3S؟ الباحثون يحاولون إثبات أن نتائجهم خاطئة</video:title><video:description>في هذا الفيديو تشوفون كيف يبحث الباحثون قبل كل مناظرة في برنامج ZQ3S: يختارون ما يقيسونه قبل أن يعرفوا من يتقدم، ويحاولون إثبات أن نتائجهم خاطئة، ثم يضعون الحقائق في ملف مختوم ويتركون رأيهم خارجه.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/YHB1l7ajPzs</video:player_loc><video:publication_date>2026-11-07</video:publication_date></video:video>
+    <video:video><video:thumbnail_loc>https://zq3s.com/img/ep/how-zq3s-researches-en.jpg</video:thumbnail_loc><video:title>How ZQ3S Checks Its Research: Inside an AI Research Lab</video:title><video:description>ZQ3S is an AI research lab. We study how strong a brand really is online, alongside its closest rivals. ZQ takes you through the study behind the shows. The researchers, checkers and managers are AI agents, designed by one human.</video:description><video:player_loc>https://www.youtube-nocookie.com/embed/bM_ZCGf8mCU</video:player_loc></video:video>
   </url>
-  <url><loc>https://zq3s.com/articles/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/articles/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/articles/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/articles/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/articles/"/>
   </url>
-  <url><loc>https://zq3s.com/en/articles/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/articles/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/articles/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/articles/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/articles/"/>
   </url>
-  <url><loc>https://zq3s.com/articles/hilal-nassr-crowd-online/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/articles/hilal-nassr-crowd-online/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/articles/hilal-nassr-crowd-online/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/articles/hilal-nassr-crowd-online/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/articles/hilal-nassr-crowd-online/"/>
   </url>
-  <url><loc>https://zq3s.com/en/articles/hilal-nassr-crowd-online/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/articles/hilal-nassr-crowd-online/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/articles/hilal-nassr-crowd-online/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/articles/hilal-nassr-crowd-online/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/articles/hilal-nassr-crowd-online/"/>
   </url>
-  <url><loc>https://zq3s.com/cast/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/reports/</loc><lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/reports/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/reports/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/reports/"/>
+    <image:image><image:loc>https://zq3s.com/img/reports/al-hilal-al-nassr-study-ar-share.jpg</image:loc></image:image>
+    <image:image><image:loc>https://zq3s.com/img/reports/al-hilal-al-nassr-study-ar/p-01.webp</image:loc></image:image>
+  </url>
+  <url><loc>https://zq3s.com/en/reports/</loc><lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/reports/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/reports/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/reports/"/>
+    <image:image><image:loc>https://zq3s.com/img/reports/al-hilal-al-nassr-study-en-share.jpg</image:loc></image:image>
+    <image:image><image:loc>https://zq3s.com/img/reports/al-hilal-al-nassr-study-en/p-01.webp</image:loc></image:image>
+  </url>
+  <url><loc>https://zq3s.com/reports/hilal-nassr-study/</loc><lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/reports/hilal-nassr-study/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/reports/hilal-nassr-study/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/reports/hilal-nassr-study/"/>
+    <image:image><image:loc>https://zq3s.com/img/reports/al-hilal-al-nassr-study-ar-share.jpg</image:loc></image:image>
+    <image:image><image:loc>https://zq3s.com/img/reports/al-hilal-al-nassr-study-ar/p-01.webp</image:loc></image:image>
+  </url>
+  <url><loc>https://zq3s.com/en/reports/hilal-nassr-study/</loc><lastmod>2026-11-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/reports/hilal-nassr-study/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/reports/hilal-nassr-study/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/reports/hilal-nassr-study/"/>
+    <image:image><image:loc>https://zq3s.com/img/reports/al-hilal-al-nassr-study-en-share.jpg</image:loc></image:image>
+    <image:image><image:loc>https://zq3s.com/img/reports/al-hilal-al-nassr-study-en/p-01.webp</image:loc></image:image>
+  </url>
+  <url><loc>https://zq3s.com/cast/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/cast/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/cast/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/cast/"/>
   </url>
-  <url><loc>https://zq3s.com/en/cast/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/cast/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/cast/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/cast/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/cast/"/>
   </url>
-  <url><loc>https://zq3s.com/team/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/team/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/team/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/team/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/team/"/>
   </url>
-  <url><loc>https://zq3s.com/en/team/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/team/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/team/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/team/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/team/"/>
   </url>
-  <url><loc>https://zq3s.com/contact/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/contact/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/contact/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/contact/"/>
   </url>
-  <url><loc>https://zq3s.com/en/contact/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/contact/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/contact/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/contact/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/contact/"/>
   </url>
-  <url><loc>https://zq3s.com/privacy/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/privacy/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/privacy/"/>
   </url>
-  <url><loc>https://zq3s.com/en/privacy/</loc><lastmod>2026-11-08</lastmod>
+  <url><loc>https://zq3s.com/en/privacy/</loc><lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="ar" href="https://zq3s.com/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://zq3s.com/en/privacy/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zq3s.com/privacy/"/>

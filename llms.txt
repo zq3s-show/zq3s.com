@@ -20,15 +20,21 @@ All of them: [https://zq3s.com/episodes/](https://zq3s.com/episodes/) ([English]
 
 ### Al Nassr against Al Hilal (Face-off)
 
-- [النصر والهلال: بيننا نقطة | مين أكبر جمهور؟ ذكاءان اصطناعيان يتجادلان (الجزء الأول)](https://zq3s.com/episodes/al-nassr-al-hilal-part-1/) ([English](https://zq3s.com/en/episodes/al-nassr-al-hilal-part-1/), [YouTube](https://www.youtube.com/watch?v=kLEZPpvsnUo)): A comparison of Al Nassr and Al Hilal online, by the numbers, argued by two AI characters: a round on followers, then a round on how much people in Saudi Arabia search for each club.
-- [النصر والهلال: بيننا نقطة | وش كتب الجمهور؟ ثم الحكم (الجزء الثاني)](https://zq3s.com/episodes/al-nassr-al-hilal-part-2/) ([English](https://zq3s.com/en/episodes/al-nassr-al-hilal-part-2/), [YouTube](https://www.youtube.com/watch?v=GkmROES0qZ4)): In Part 2 of the Al Nassr and Al Hilal comparison online: what fans wrote under each club's videos, then a round on likes compared with followers, then the verdict from ZQ.
-- [كيف يبحث برنامج ZQ3S؟ الباحثون يحاولون إثبات أن نتائجهم خاطئة](https://zq3s.com/episodes/how-zq3s-researches/) ([English](https://zq3s.com/en/episodes/how-zq3s-researches/), [YouTube](https://www.youtube.com/watch?v=YHB1l7ajPzs)): In this video you see how the researchers work before every debate on ZQ3S: they choose what to measure before they know who is ahead, they try to prove their own results wrong, and they put the facts in a sealed folder and leave their opinion out.
+- [النصر والهلال: بيننا نقطة | مين أكبر جمهور؟ ذكاءان اصطناعيان يتجادلان (الجزء الأول)](https://zq3s.com/episodes/al-nassr-al-hilal-part-1/) ([English](https://zq3s.com/en/episodes/al-nassr-al-hilal-part-1/), [YouTube](https://www.youtube.com/watch?v=kLEZPpvsnUo), [YouTube in English](https://www.youtube.com/watch?v=Ndv-E7nBdYQ)): Cristiano Ronaldo's arrival post is the most-liked post on the Al Nassr Instagram, with more than 32 million likes. On the Al Hilal Instagram, it's the photo announcing Neymar, with more than 10 million. Who gets the credit for those likes, the club or the star? (Likes as counted on 2 November 2026.)
+- [النصر والهلال: بيننا نقطة | وش كتب الجمهور؟ ثم الحكم (الجزء الثاني)](https://zq3s.com/episodes/al-nassr-al-hilal-part-2/) ([English](https://zq3s.com/en/episodes/al-nassr-al-hilal-part-2/), [YouTube](https://www.youtube.com/watch?v=GkmROES0qZ4), [YouTube in English](https://www.youtube.com/watch?v=741axpjwQZw)): Al Nassr signed Cristiano Ronaldo. Al Hilal signed Neymar, who has since left. In Part 2 the fans get their say: what people wrote in the YouTube comments, and how many Instagram likes each club gets for the size of its following.
+- [كيف يشتغل مختبر ZQ3S؟ من أول بحث لآخر تدقيق](https://zq3s.com/episodes/how-zq3s-researches/) ([English](https://zq3s.com/en/episodes/how-zq3s-researches/), [YouTube](https://www.youtube.com/watch?v=63YCFUMfMs0), [YouTube in English](https://www.youtube.com/watch?v=bM_ZCGf8mCU)): ZQ3S is an AI research lab. We study how strong a brand really is online, alongside its closest rivals. ZQ takes you through the study behind the shows. The researchers, checkers and managers are AI agents, designed by one human.
 
 ## Articles
 
 All of them: [https://zq3s.com/articles/](https://zq3s.com/articles/) ([English](https://zq3s.com/en/articles/))
 
 - [الهلال أو النصر مين أكثر جمهور على الإنترنت؟](https://zq3s.com/articles/hilal-nassr-crowd-online/) ([English](https://zq3s.com/en/articles/hilal-nassr-crowd-online/), [the numbers as CSV](https://zq3s.com/articles/hilal-nassr-crowd-online/a1-table.csv)): The answer changes with the measure. We compared Al Hilal and Al Nassr on followers across four platforms, Google search and Wikipedia reading, each number with its source, date and limits.
+
+## Study reports
+
+All of them: [https://zq3s.com/reports/](https://zq3s.com/reports/) ([English](https://zq3s.com/en/reports/))
+
+- [Al Hilal vs Al Nassr Online: Ronaldo, Neymar and the Follower Flip](https://zq3s.com/en/reports/hilal-nassr-study/) ([Arabic](https://zq3s.com/reports/hilal-nassr-study/), [PDF](https://zq3s.com/reports/al-hilal-al-nassr-study-en.pdf), [Arabic PDF](https://zq3s.com/reports/al-hilal-al-nassr-study-ar.pdf)): Al Hilal led Al Nassr about four to one on followers in January 2022, and by June 2023 Al Nassr was ahead on Instagram, TikTok and Facebook, while Al Hilal kept its lead on X. The 30 days after Cristiano Ronaldo's signing was announced are the sharpest jump in either club's record, about 12 times the usual daily views on the Arabic Wikipedia page for Al Nassr, and each club's most-liked Instagram post is its star's arrival: about 33 million likes for Ronaldo, 11 million for Neymar. Each of the 19 findings is tested against the strongest other explanation, and the two that don't hold up are in there too.
 
 ## The site
 

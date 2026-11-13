@@ -60,7 +60,8 @@ function layout(){
   var cs=getComputedStyle(view),aw=view.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
   var vh=W.innerHeight,ch=ctl.offsetHeight||56;
   var bh=(bar.offsetHeight||0)+(parseFloat(getComputedStyle(bar).marginBottom)||0),tab=parseFloat(getComputedStyle(H).getPropertyValue('--tabh'))||60;
-  var ah=isFull()?vh-ch-bh-28:vh-tab-bh-ch-36;
+  /* full screen: the reader's own padding, the view's room under the pages and the controls all fit (the bar was cut) */
+  var ah=isFull()?vh-ch-bh-64:vh-tab-bh-ch-36;
   /* on a computer the book starts high on the page: it fits the first screen, controls included, without a scroll */
   var docTop=view.getBoundingClientRect().top+W.scrollY;
   if(!isFull()&&docTop<vh*.45)ah=Math.min(ah,vh-docTop-ch-28);
@@ -358,8 +359,14 @@ anchor=seenPage-1;
 bar.hidden=false;
 var pref=store('zq3s.reader');
 var startScroll=pref==='scroll';
+/* ?view=book or ?view=scroll in the address (the article's 'Flip through', a figure's page) wins for this visit only,
+   and brings the reader into view (Luay, 2026-11-13) */
+var qv=null;try{qv=new URLSearchParams(W.location.search).get('view')}catch(_){}
+if(qv==='book'||qv==='scroll')startScroll=qv==='scroll';
 if(startScroll){mode='book';setMode('scroll')}else{setMode('book')}
 if(m0&&startScroll){var li0=D.getElementById('page-'+seenPage);if(li0)li0.scrollIntoView()}
+if((qv==='book'||qv==='scroll')&&!(m0&&startScroll)){var tb=parseFloat(getComputedStyle(H).getPropertyValue('--tabh'))||60;
+  W.scrollTo(0,Math.max(0,box.getBoundingClientRect().top+W.scrollY-tb-8))}
 var rz=0;W.addEventListener('resize',function(){clearTimeout(rz);rz=setTimeout(function(){if(mode==='book'&&!T)layout()},120)});
 if(D.fonts&&D.fonts.ready)D.fonts.ready.then(function(){if(mode==='book'&&!T)layout()});
 W.__book={go:go,jump:jump,setMode:setMode,state:function(){return {mode:mode,spread:spread,cur:cur,views:views(),shown:shown(),pw:pw,ph:ph,turning:!!T,st:state}},

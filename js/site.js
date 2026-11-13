@@ -218,8 +218,8 @@ if(castEls.length&&H.getAttribute('data-cast-src')){
     }
     function hold(who,on){if(on)busy[who]=busy[who]||{held:1};else if(busy[who]&&busy[who].held)delete busy[who];sync()}
     function cue(who,key){if(RM||!actors[who]||cued[who+':'+key])return;if(busy[who]){pend[who]=key;return}cued[who+':'+key]=1;play(who,key)}
-    function chip(r){var u=L.use&&T(L.use(r.key)||'');return '<button type="button" class="act" data-k="'+html(r.key)+'" aria-pressed="false"'+
-      (u?' title="'+html(u)+'"':'')+'><span class="an">'+html(r.num)+'</span>'+html(T(r.name))+'</button>'}
+    /* a fan sees the move's name only: no catalogue number, no animator's 'use it when' note (Luay, 2026-11-13) */
+    function chip(r){return '<button type="button" class="act" data-k="'+html(r.key)+'" aria-pressed="false">'+html(T(r.name))+'</button>'}
     Object.keys(actors).forEach(function(who){
       var a=actors[who],tray=a.tray;if(!tray)return;var sceneTray=isScene(who);
       var gs=groups.filter(function(g){return !!g.stage===sceneTray}).map(function(g){
@@ -578,5 +578,16 @@ $$('[data-epx-filters]').forEach(function(box){
     if(W.ZQ3S_TRACK)W.ZQ3S_TRACK('episode_filter',{where:'episodes',id:c.getAttribute('data-key')+(c.tagName==='SELECT'?':'+(c.value||'all'):'')})},c.tagName==='SELECT'?0:220)})});
   if(reset)reset.addEventListener('click',function(){ctl.forEach(function(c){c.value=''});apply(true)});
   box.hidden=false;apply(false);
+});
+/* 7. the silent loops (the approved start-here carousel, R-2026-11-13-15; Luay, 2026-11-13): each shows its still until it
+      is on screen, then loads and plays its clip, and pauses when it leaves. Under reduced motion, on Save-Data and
+      without this script it stays a still. Nothing loads before the visitor scrolls to it. */
+$$('video.ps-loop-v[data-src]').forEach(function(v){
+  if(RM||!('IntersectionObserver' in W))return;var c=W.navigator.connection;if(c&&c.saveData)return;
+  v.muted=true;
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){if(!v.getAttribute('src'))v.src=v.getAttribute('data-src');var p=v.play();if(p&&p.catch)p.catch(function(){})}
+    else if(!v.paused)v.pause()})},{rootMargin:'80px 0px',threshold:.2});
+  io.observe(v);
 });
 })();

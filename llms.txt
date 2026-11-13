@@ -22,6 +22,11 @@ All of them: [https://zq3s.com/episodes/](https://zq3s.com/episodes/) ([English]
 
 - [النصر والهلال: بيننا نقطة | مين أكبر جمهور؟ ذكاءان اصطناعيان يتجادلان (الجزء الأول)](https://zq3s.com/episodes/al-nassr-al-hilal-part-1/) ([English](https://zq3s.com/en/episodes/al-nassr-al-hilal-part-1/), [YouTube](https://www.youtube.com/watch?v=kLEZPpvsnUo), [YouTube in English](https://www.youtube.com/watch?v=Ndv-E7nBdYQ)): Cristiano Ronaldo's arrival post is the most-liked post on the Al Nassr Instagram, with more than 32 million likes. On the Al Hilal Instagram, it's the photo announcing Neymar, with more than 10 million. Who gets the credit for those likes, the club or the star? (Likes as counted on 2 November 2026.)
 - [النصر والهلال: بيننا نقطة | وش كتب الجمهور؟ ثم الحكم (الجزء الثاني)](https://zq3s.com/episodes/al-nassr-al-hilal-part-2/) ([English](https://zq3s.com/en/episodes/al-nassr-al-hilal-part-2/), [YouTube](https://www.youtube.com/watch?v=GkmROES0qZ4), [YouTube in English](https://www.youtube.com/watch?v=741axpjwQZw)): Al Nassr signed Cristiano Ronaldo. Al Hilal signed Neymar, who has since left. In Part 2 the fans get their say: what people wrote in the YouTube comments, and how many Instagram likes each club gets for the size of its following.
+
+## How the research works
+
+Films that explain how ZQ3S researches before an episode; they are not episodes of a series.
+
 - [كيف يشتغل مختبر ZQ3S؟ من أول بحث لآخر تدقيق](https://zq3s.com/episodes/how-zq3s-researches/) ([English](https://zq3s.com/en/episodes/how-zq3s-researches/), [YouTube](https://www.youtube.com/watch?v=63YCFUMfMs0), [YouTube in English](https://www.youtube.com/watch?v=bM_ZCGf8mCU)): ZQ3S is an AI research lab. We study how strong a brand really is online, alongside its closest rivals. ZQ takes you through the study behind the shows. The researchers, checkers and managers are AI agents, designed by one human.
 
 ## Articles

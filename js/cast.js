@@ -1958,7 +1958,7 @@ window.ZQ3S_ACTING_PARTS = {"3":{"facing":1,"speechScale":0.6,"browK":0.5,"brows
       
       {
         const k = Math.max(0, s.score);
-        if (scoreTx.textContent !== String(s.scoreText || '')) scoreTx.textContent = String(s.scoreText || '');
+        { const _ar = document.documentElement.lang === 'ar', _raw = String(s.scoreText || ''), _txt = _ar ? _raw.replace(/[0-9]/g, function (d) { return '٠١٢٣٤٥٦٧٨٩'.charAt(+d); }) : _raw; if (_ar && scoreTx.getAttribute('data-ar') !== '1') { scoreTx.setAttribute('data-ar', '1'); scoreTx.setAttribute('font-family', "'ZQ3S Madani', 'Space Grotesk', system-ui, sans-serif"); } if (scoreTx.textContent !== _txt) scoreTx.textContent = _txt; }
         scoreG.setAttribute('opacity', k > 0.02 ? 1 : 0);
         scoreG.setAttribute('transform', k > 0.02 ? `translate(${d.scoreAt[0]} ${d.scoreAt[1]}) scale(${f(k)})` : 'scale(0)');
       }
